@@ -18,12 +18,11 @@ class TeReoExtension extends DataExtension
     {
         parent::updateCMSFields($fields);
 
-        $fields->addFieldToTab(
-            'Root.Main',
+        $fields->insertBefore(
+            'URLSegment',
             TextField::create(
                 'TeReoTitle',
-                _t(self::class . '.TEREOTITLE', 'Te reo Māori title'),
-                'URLSegment'
+                _t(self::class . '.TEREOTITLE', 'Te reo Māori name')
             )
         );
     }
