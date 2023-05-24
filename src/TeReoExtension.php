@@ -7,6 +7,12 @@ use SilverStripe\Forms\TextField;
 use SilverStripe\ORM\DataExtension;
 use SilverStripe\ORM\FieldType\DBVarchar;
 
+/**
+ * Class \Pikselin\TeReo\TeReoExtension
+ *
+ * @property Page|TeReoExtension $owner
+ * @property string $TeReoTitle
+ */
 class TeReoExtension extends DataExtension
 {
 
